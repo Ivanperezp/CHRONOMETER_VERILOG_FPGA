@@ -259,3 +259,24 @@ bcd7seg display_minutes_tens (.bcd(q_minutes_tens), .seg(HEX5));
 
 # Simulation and physical implementation
 
+
+
+## Simulation
+This project was simulated using ModelSim Altera. RST and START/STOP signals were disabled in order to avoid errors asociated with the toggle of the signals mentioned.  The following are some screenshots of the top file of this project compiled using the software.
+### Signals value
+**1. CLOCK_50:** Clock with a period of 20 ns and an offset of 1 ns\
+**2. RST:** Forced to 1 logic.\
+**3. START/STOP:** Forced to 1 logic.\
+**3. running flag:** Forced to 1 logic.\
+**4. Time Window:** 1 ms
+
+![Signals with no assigned value](Signals_no_value.png)
+![t=1ms](sim_t=1ms.png)
+![t=1h](t=1h.png)
+![t=1t](t=1t.png)
+![t=1s](t=1s.png)
+As we could see, the result of time passing is shown on 7-Segment displays.
+
+## Pins assigments
+![Pin assigments 1](Pin_1.png)
+![Pin assigments 1](Pin_2.png)
