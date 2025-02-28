@@ -4,8 +4,8 @@ chronometer built in Verilog and implemented on a DE0-CV FPGA. It features a res
 The chronometer is composed of four files: **clk_divider.v, bcd7seg.v, debounce.v and cronometro_top.v** \
 In this README file you will find a detailed explanation of each file, which ones could be found in this repository. The RTL diagram and the black box model are shown below and could be found in the files of these repository.
 
-![RTL Diagram](RTL.png)
-![Black box diagram](BLACK_BOX_DIAGRAM.png)
+![RTL Diagram](images/RTL.png)
+![Black box diagram](images/BLACK_BOX_DIAGRAM.png)
 
 # clk_divider.v
 
@@ -270,13 +270,13 @@ This project was simulated using ModelSim Altera. RST and START/STOP signals wer
 **3. running flag:** Forced to 1 logic.\
 **4. Time Window:** 1 ms
 
-![Signals with no assigned value](Signals_no_value.png)
-![t=1ms](sim_t=1ms.png)
-![t=1h](t=1h.png)
-![t=1t](t=1t.png)
-![t=1s](t=1s.png)
+![Signals with no assigned value](images/Signals_no_value.png)
+![t=1ms](images/sim_t=1ms.png)
+![t=1h](images/t=1h.png)
+![t=1t](images/t=1t.png)
+![t=1s](images/t=1s.png)
 As we could see, the result of time passing is shown on 7-Segment displays.
 
 ## Pins assigments
-![Pin assigments 1](Pin_1.png)
-![Pin assigments 1](Pin_2.png)
+![Pin assigments 1](images/Pin_1.png)
+![Pin assigments 1](images/Pin_2.png)
