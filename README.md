@@ -5,8 +5,7 @@ The chronometer is composed of four files: **clk_divider.v, bcd7seg.v, debounce.
 In this README file you will find a detailed explanation of each file, which ones could be found in this repository. The RTL diagram and the black box model are shown below and could be found in the files of these repository.
 
 ![RTL Diagram](RTL.png)
-
-
+![Black box diagram](BLACK_BOX_DIAGRAM.png)
 
 # clk_divider.v
 
