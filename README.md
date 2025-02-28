@@ -2,7 +2,9 @@
 chronometer built in Verilog and implemented on a DE0-CV FPGA. It features a reset button and a start/stop button for controlling the timer.
 
 The chronometer is composed of four files: **clk_divider.v, bcd7seg.v, debounce.v and cronometro_top.v** \
-The following is a detailed explanation of each file. Which ones could be found in this repository
+In this README file you will find a detailed explanation of each file, which ones could be found in this repository. The RTL diagram is shown below next to the black box model.
+
+![alt text](image.png)
 
 
 
@@ -44,7 +46,7 @@ endmodule
    The `always` block triggers on the rising edge (`posedge`) of `clk_in`.
    `counter` increments with every clock cycle of `clk_in`.
 
- **Clock Toggling**
+ **Clock Toggling**\
     When `counter` reaches `DIVISOR/2 - 1`, `clk_out` toggles (flips its state from 0 to 1 or from 1 to 0).\
    The counter resets to 0 after toggling.
    This ensures that `clk_out` completes one full cycle (both high and low) after `DIVISOR` clock cycles of `clk_in`, effectively reducing the frequency by a factor of `DIVISOR`.
@@ -135,14 +137,14 @@ endmodule
 **`btn_out`**: Debounced button output.
 
 ### **Debounce Mechanism**
-1. **Detects State Change**:
-     If `btn_in` differs from the `stable_state`, the `count` starts incrementing.
+**Detects State Change**:
+     If `btn_in` differs from the `stable_state`, the `count` starts incrementing
    
-2. **Waiting for Stability**:
+**Waiting for Stability**:
    If `btn_in` remains in the new state for `20'hFFFFF` cycles, `stable_state` updates.
-   If `btn_in` changes again before `count` reaches the threshold, `count` resets.
+   If `btn_in` changes again before `count` reaches the threshold, `count` resets
 
-3. **Output Update**:
+**Output Update**:
    The debounced button state (`stable_state`) is assigned to `btn_out`.
 
 ***
