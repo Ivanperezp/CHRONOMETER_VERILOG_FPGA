@@ -44,7 +44,7 @@ endmodule
    The `always` block triggers on the rising edge (`posedge`) of `clk_in`.
    `counter` increments with every clock cycle of `clk_in`.
 
-2. **Clock Toggling**
+ **Clock Toggling**
     When `counter` reaches `DIVISOR/2 - 1`, `clk_out` toggles (flips its state from 0 to 1 or from 1 to 0).\
    The counter resets to 0 after toggling.
    This ensures that `clk_out` completes one full cycle (both high and low) after `DIVISOR` clock cycles of `clk_in`, effectively reducing the frequency by a factor of `DIVISOR`.
@@ -255,4 +255,6 @@ bcd7seg display_minutes_tens (.bcd(q_minutes_tens), .seg(HEX5));
 
 **Each digit (`q_*`) is converted** into a 7-segment display format.
 `HEX0-HEX5` displays time as **MM:SS:DD** (minutes, seconds, centiseconds).
+
+# Simulation and physical implementation
 
