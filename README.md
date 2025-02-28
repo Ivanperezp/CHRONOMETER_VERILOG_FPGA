@@ -2,9 +2,9 @@
 chronometer built in Verilog and implemented on a DE0-CV FPGA. It features a reset button and a start/stop button for controlling the timer.
 
 The chronometer is composed of four files: **clk_divider.v, bcd7seg.v, debounce.v and cronometro_top.v** \
-In this README file you will find a detailed explanation of each file, which ones could be found in this repository. The RTL diagram is shown below next to the black box model.
+In this README file you will find a detailed explanation of each file, which ones could be found in this repository. The RTL diagram and the black box model could be found in the files of these repository.
 
-![alt text](image.png)
+![RTL Diagram](RTL.png)
 
 
 
